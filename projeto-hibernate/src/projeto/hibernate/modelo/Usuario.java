@@ -1,6 +1,7 @@
 package projeto.hibernate.modelo;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 
@@ -11,6 +12,7 @@ public class Usuario {
 	
 	//Define a chave primária
 	@Id 
+	@GeneratedValue
 	private Integer id;
 	private String nome;
 	
