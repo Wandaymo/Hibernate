@@ -11,8 +11,8 @@ public class UsuarioTeste {
 	public static void main(String[] args) {
 		
 		Usuario usuario = new Usuario();
-		usuario.setId(1);
-		usuario.setNome("Wandaymo");
+		//usuario.setId(2);
+		usuario.setNome("Wandaymo 2");
 		
 		SessionFactory factory = new Configuration().configure().buildSessionFactory();
 		Session session = factory.openSession();
