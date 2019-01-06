@@ -14,18 +14,26 @@
         <property name="connection.password">wandaymo05</property>
 
         <!-- SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
         <property name="format_sql">false</property>
 
         <!-- Drop and re-create the database schema on startup -->
+        <!-- update -> Adiciona novos dados -->
+        <!-- create -> Cria um novo banco -->
         <property name="hbm2ddl.auto">update</property>
 
         <!-- Names the annotated entity class -->
-		<mapping class="projeto.hibernate.modelo.Usuario"/>
+		<!-- <mapping class="projeto.hibernate.modelo.Usuario"/>
+		<mapping class="projeto.hibernate.modelo.Veiculo"/> -->
+		<mapping class="projeto.hibernate.modelo.Funcionario"/>
+		<mapping class="projeto.hibernate.modelo.Projeto"/>
 		
+		<mapping class="projeto.hibernate.heranca.VeiculoHeranca"/>
+		<mapping class="projeto.hibernate.heranca.VeiculoQuatroRodas"/>
+		<mapping class="projeto.hibernate.heranca.VeiculoDuasRodas"/>
 		
     </session-factory>
 
