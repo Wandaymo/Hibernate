@@ -1,2 +1,2 @@
 # Hibernate
-Neste repositório criei um aplicativo simples Java que trabalha com o Hibernate Framework, salvando dados em um banco de dados MySQL
+In this repository I create an simple application Java that work with Hibernate Framework, saving data in a database MySQL
